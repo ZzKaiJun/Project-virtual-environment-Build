@@ -1,0 +1,81 @@
+新增poetry套件管理工具:  
+
+介紹文章:
+https://blog.kyomind.tw/python-poetry/
+
+
+若是從0開始開發，
+需要安裝poetry工具:
+
+Bach:
+mac: curl -sSL https://install.python-poetry.org | python3 -
+windows: (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+
+
+設定 PATH 環境變數:
+
+Bach:
+mac: export PATH=$PATH:$HOME/.local/bin
+windows: $Env:Path += ";C:\Users\jetbrains\AppData\Roaming\Python\Scripts"; setx PATH "$Env:Path"
+
+
+
+1.初始化:
+
+poetry init
+
+
+2. 確認poetry config 設定
+
+poetry config --list
+
+確認 virtualenvs.in-project  設定為 true
+
+poetry config  virtualenvs.in-project  true
+
+
+
+3. 建立虛擬環境
+
+poetry env use python
+
+
+4. 啟動虛擬環境
+
+poetry shell
+
+
+5. 修改 pyproject.toml  
+
+安裝套件:
+
+poetry add flask
+
+poetry add django@^4.2.9     Django 版本為 >=4.2.9 且 <5.0.0（允許 4.2.9 及以上版本，但不包括 5.0.0 )
+
+poetry add django@~4.2.9     Django 版本只會接受 4.2.x 系列的更新
+
+poetry add "django>=4.2.9"   指定 Django 版本為 >=4.2.9（沒有上限）
+
+poetry add django==4.2.9     僅允許 Django 的 4.2.9 版本
+
+
+6. 新增 dev-dependencies 套件
+
+poetry add black -G dev 
+
+
+7. 若有現有的 pyproject.toml ，可以直接安裝
+
+poetry install
+
+
+8. 其他指令
+
+poetry update         更新套件
+
+poetry show
+
+poetry show --tree    列出樹狀圖
+
+poetry remove flask   移除套件
