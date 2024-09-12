@@ -1,0 +1,8 @@
+建立 .gitignore
+
+能防止不必要的檔案上傳至git
+
+
+內容:
+
+__pycache__

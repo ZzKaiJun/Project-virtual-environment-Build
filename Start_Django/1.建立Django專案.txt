@@ -1,0 +1,38 @@
+1. 安裝Django套件
+
+poetry add django
+
+
+2. 確認是否安裝完成
+
+django-admin --version
+
+
+3. 啟動django專案
+
+django-admin startproject EMMP   建立名為 EMMP 的 Django專案
+
+
+4. 確認是否有
+
+EMMP/EMMP/__init__.py
+
+EMMP/EMMP/asgi.py
+
+EMMP/EMMP/settings.py
+
+EMMP/EMMP/urls.py
+
+EMMP/EMMP/wsgi.py
+
+EMMP/manage.py
+
+
+5. 修改/移除外部EMMP資料夾
+
+最外層的EMMP資料夾為容器，可以隨意修改名稱。
+
+
+
+參考文章:
+https://ithelp.ithome.com.tw/articles/10199733
