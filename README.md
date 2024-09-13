@@ -39,7 +39,7 @@
 使用 Poetry 來管理Python套件
 
 可參考以下專案來操作:
-[poetry套件](https://github.com/ZzKaiJun/learn_poetry?tab=readme-ov-file#%E5%AE%89%E8%A3%9Dpython%E5%A5%97%E4%BB%B6)
+[poetry套件](https://github.com/ZzKaiJun/learn_poetry)
 
 ## 4. 建立.gitignore
 
